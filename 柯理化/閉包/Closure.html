@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // 閉包
+        function a(x){
+            console.log('x',x);
+
+            function b(y){
+                console.log('x+y', x+y);
+            }
+
+
+            return b;
+        }
+
+
+        let myFunc = a;
+
+        // newFunc 等於創建了一個閉包的環境
+        let newFunc = myFunc(1); // return b
+
+        newFunc(2);
+        newFunc(3);
+
+        // newFunc 等於創建了一個閉包的環境
+        let newFunc2 = myFunc(2); // return b
+        newFunc2(2);
+
+        // newFunc 等於創建了一個閉包的環境
+        let newFunc3 = myFunc(3); // return b
+        newFunc3(2);
+
+
+        newFunc(5);
+
+
+
+    </script>
+</body>
+</html>
