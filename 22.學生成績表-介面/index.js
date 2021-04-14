@@ -27,6 +27,13 @@ dataTable.innerHTML = `<thead><tr>${headingDisplay}</tr></thead>`
 
 let bodyDisplay = ''
 
-for (let i = 0; i < rawDataArray.length; i++) {
+for (let i = 0; i <tr rawDataArray.length; i++) {
   let row = rawDataArray[i].replaceAll('"', '').split(',')
 }
+bodyDisplay += `</tr>`
+
+for(j=0;j<row.length;j++){
+  bodyDisplay+=`<tbody>${bodyDisplay}</tbody>`
+}
+
+dataTable.innerHTML=`<tbody>${bodyDisplay}</tbody>`
