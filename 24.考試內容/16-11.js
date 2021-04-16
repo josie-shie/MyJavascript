@@ -36,4 +36,4 @@ for (let j = 0; j < numbrtData.length; j++) {
   console.log(numberDisplay)
 }
 
-dataTable.innerHTML = `<thead><tr>${nameDisplay}</tr></thead><tbody><tr>${numberDisplay}</tr></tbody>`
+dataTable.innerHTML = `<thead><tr><th>姓名(Name)</th>${nameDisplay}</tr></thead><tbody><tr><td>電話(Number)</td>${numberDisplay}</tr></tbody>`
